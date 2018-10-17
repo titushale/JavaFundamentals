@@ -10,8 +10,35 @@ public class WelcomeToJava {
 //stringExamples();
 //moreStringExamples();
 //dataTypeExamples		
-		scannerExample();
+		//scannerExample();
+		//myOperatorExample();
+		myAssignmentExample();
+		
 
+	}
+	
+	public static void myAssignmentExample() {
+		AssignmentExample ae = new AssignmentExample();
+		ae.plusEqualsExample();
+		ae.minusEqualExample();
+		ae.multiplyEqualsExample();
+		ae.divisionEqualsExample();
+		ae.modulusEqualsExample();
+		ae.leftShiftEeualsExample();
+		ae.rightShftEqualsExample();
+		ae.bitwiseAndEqualsExample();
+		ae.bitwiseOrEqualsExample();
+	}
+	
+	
+	public static void myOperatorExample() {
+		OperatorExamples oe = new OperatorExamples();
+		oe.incrementSample();
+		oe.decrementsample();
+		oe.equalsExample();
+		oe.equalsExample2();
+		oe.logicalExamples();
+		
 	}
 
 	public static void someMethod() {
