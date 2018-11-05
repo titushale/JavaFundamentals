@@ -39,6 +39,24 @@ public class PrimitiveExamples {
 
 	}
 
+	private void myPrivateMethod() {
+		System.out.println("This is private.");
+	}
+	public void myPublicMethod() {
+		System.out.println("This is public");
+		myPrivateMethod();
+	}
+	
+	protected void myProtectedMethod() {
+		System.out.println("This is Protected");
+	}
+	
+	
+	
+	
+	
+	
+	
 //Method adds two numbers to a total and displays the result
 	public void myAddition() {
 		int total = ab + cd;
@@ -85,5 +103,6 @@ public class PrimitiveExamples {
 		short d = (short) c;
 		System.out.println(d);
 
+	
 	}
 }
