@@ -3,11 +3,18 @@ package com.Fundamentals.Java;
 import java.util.*;
 
 import com.Fundamentals.data.Apple;
+import com.Fundamentals.data.Dinner;
 import com.Fundamentals.data.Dinosaur;
+import com.Fundamentals.data.ExceptionSample;
+import com.Fundamentals.data.HolidayDinner;
 import com.Fundamentals.data.Pterodactyl;
 import com.Fundamentals.data.Quiz2;
 import com.Fundamentals.data.Trex;
 import com.Fundamentals.data.Utility;
+
+enum iceCream{
+	Vanilla, Chocolate, Strawberry, Caramel;
+}
 
 public class WelcomeToJava {
 
@@ -47,12 +54,42 @@ public class WelcomeToJava {
 		// subtractSomething();
 		// arraylistExamples();
 		// arrayListObjectExamples();
-		hashMapExample();
+		//hashMapExample();
+		//enumSample1();
+		exceptionExample();
 	}
 	/*
 	 * HashSet ignores duplicates and also order if the item added is already in the
 	 * collection , it will not add it or give any indication that it wont
 	 */
+	
+	
+	
+	public static void exceptionExample() {
+		ExceptionSample es = new ExceptionSample();
+		//es.myException();
+		//es.mySecondException();
+		es.myThirdException();
+	}
+	
+	
+	
+	
+	
+	public static void enumSample1() {
+		iceCream ic = iceCream.Strawberry;
+		System.out.println(ic);
+		HolidayDinner hd = new HolidayDinner();
+		hd.LetsEat();
+		hd.letsChoose(Dinner.Turkey);
+		hd.letsChoose(Dinner.Ham);
+		hd.letsChoose(Dinner.CornBread);
+		
+		
+		Dinner d1 = Dinner.MashedPotatoes;
+		System.out.println(d1);
+		d1.readyNow();
+	}
 
 	public static <E> void hashMapExample() {
 		HashMap<Integer, String> myMap = new HashMap<Integer, String>();
